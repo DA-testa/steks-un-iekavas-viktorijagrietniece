@@ -40,7 +40,7 @@ def main():
     elif input_method == 'F':
         filename = input()
         test = "./test/" + filename
-        with open (testfolder, mode = 'r') as file:
+        with open (test, mode = 'r') as file:
             text = file.read()
             mismatch = find_mismatch(text)
             print(mismatch)
