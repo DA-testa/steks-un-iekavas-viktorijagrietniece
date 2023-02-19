@@ -1,3 +1,4 @@
+# Viktorija Grietniece 221RDB283
 from collections import namedtuple
 
 Bracket = namedtuple("Bracket", ["char", "position"])
