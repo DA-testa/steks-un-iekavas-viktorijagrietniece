@@ -1,5 +1,3 @@
-# python3
-
 from collections import namedtuple
 
 Bracket = namedtuple("Bracket", ["char", "position"])
@@ -39,7 +37,7 @@ def main():
            print(mismatch)
         else:
            print("Success")
-     elif input_method == 'F':
+    elif input_method == 'F':
         filename = input()
         test = "./test/" + filename
         with open (testfolder, mode = 'r') as file:
