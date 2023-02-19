@@ -14,7 +14,6 @@ def find_mismatch(text):
     for i, next in enumerate(text):
         if next in "([{":
             opening_brackets_stack.append(Bracket(next, i+1))
-            
         if next in ")]}":
             if not opening_brackets_stack or not are_matching(opening_brackets_stack[-1].char, next):
                 return i + 1
@@ -26,9 +25,14 @@ def find_mismatch(text):
 
 
 def main():
-    izv = input()
-    if "I" in text:
-        text = input()
+    input_method = input()
+    if input_method = "F":
+        file_name = input()
+        with open(file_name, "r") as file:
+            text = file.read().strip()
+    else input_method == "I"
+    text = input()
+    
     mismatch = find_mismatch(text)
     if mismatch == "Success":
         print("Success")
